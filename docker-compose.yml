@@ -1,0 +1,14 @@
+version: '3'
+services:
+  registry:
+    image: sea/eureka
+    ports:
+      - "8761:8761"
+  pre-server:
+    image: sea/pre-server
+    ports:
+      - "8888"
+  analysis:
+    image: sea/analysis
+    ports:
+      - "8889"
